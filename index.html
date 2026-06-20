@@ -200,7 +200,7 @@ function setH(h){halaman=h;cari="";billingRes=null;re();}
 function setC(v){cari=v;re();}
 function openModal(type,data){modal=type;formData=data?JSON.parse(JSON.stringify(data)):{};re();}
 function closeModal(){modal=null;formData={};re();}
-function setF(k,v){formData[k]=v;re();}
+function setF(k,v){formData[k]=v;}
 
 function login(){
   var u=document.getElementById("inp-user").value;
