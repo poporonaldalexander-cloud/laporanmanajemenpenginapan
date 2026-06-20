@@ -196,10 +196,10 @@ function badge(label){
 }
 
 function re(){document.getElementById("root").innerHTML=render();}
-function setH(h){halaman=h;cari="";billingRes=null;re();}
-function setC(v){cari=v;re();}
-function openModal(type,data){modal=type;formData=data?JSON.parse(JSON.stringify(data)):{};re();}
-function closeModal(){modal=null;formData={};re();}
+function setH(h){halaman=h;cari="";billingRes=null;}
+function setC(v){cari=v;}
+function openModal(type,data){modal=type;formData=data?JSON.parse(JSON.stringify(data)):{};}
+function closeModal(){modal=null;formData={};}
 function setF(k,v){formData[k]=v;}
 
 function login(){
